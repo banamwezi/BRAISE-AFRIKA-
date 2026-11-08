@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171513">
+  <meta name="description" content="BRAISE AFRIKA, restaurant à Kinshasa. Grillades, spécialités africaines et planches à partager de 2 à 10 personnes. Commandes via WhatsApp.">
+  <title>BRAISE AFRIKA | Grillades & saveurs africaines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#171513;--panel:#211e1a;--cream:#f5efe5;--muted:#c6b9a8;--gold:#e6a34a;--orange:#d96b2b;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--cream);font-family:'DM Sans',Arial,sans-serif} a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{position:absolute;z-index:5;top:0;left:0;right:0;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.17)}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-family:'Playfair Display',serif;font-size:23px;font-weight:800;letter-spacing:1.5px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:26px;color:#f0e8dc;font-size:14px}.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#1b1712;font-weight:800;padding:13px 20px;border-radius:4px;transition:.2s}.navbtn:hover,.btn:hover{background:#f2bc70;transform:translateY(-2px)}
+    .hero{min-height:690px;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(15,13,11,.94) 0%,rgba(15,13,11,.72) 48%,rgba(15,13,11,.2) 100%),url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,var(--bg))}.hero-content{position:relative;z-index:1;max-width:700px;padding:145px 0 125px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(46px,8vw,86px);line-height:1.02;margin:18px 0}.hero h1 em{color:var(--gold);font-style:normal}.hero p{color:#eee3d5;font-size:18px;line-height:1.75;max-width:580px;margin:0 0 28px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.btn-outline{border:1px solid rgba(255,255,255,.65);padding:13px 20px;border-radius:4px;font-weight:700}.btn-outline:hover{background:rgba(255,255,255,.12)}
+    section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head h2{font:700 clamp(32px,5vw,48px)/1.1 'Playfair Display',serif;margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}.intro-photo{height:430px;border-radius:8px;overflow:hidden}.intro-photo img{width:100%;height:100%;object-fit:cover}.intro-copy h2{font:700 42px/1.12 'Playfair Display',serif;margin:12px 0 20px}.intro-copy p{color:var(--muted);line-height:1.8}.intro-copy .btn{margin-top:15px}
+    .boards{background:#201c18}.board-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.board{min-height:290px;position:relative;overflow:hidden;border-radius:8px;background:#30251c;isolation:isolate;display:flex;align-items:end;padding:22px}.board:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.92),rgba(0,0,0,.05) 82%),var(--photo) center/cover;z-index:-1;transition:transform .4s}.board:hover:before{transform:scale(1.06)}.board .people{font-size:12px;letter-spacing:2px;color:#f3c17c;text-transform:uppercase;font-weight:800}.board h3{font:700 27px 'Playfair Display',serif;margin:7px 0}.price{font-size:22px;font-weight:800;color:var(--gold)}.board small{display:block;color:#e7d9c8;margin-top:5px}.popular{outline:2px solid var(--gold)}.tag{position:absolute;top:15px;right:15px;background:var(--gold);color:#21170c;font-weight:800;font-size:10px;letter-spacing:1px;padding:7px 10px;border-radius:2px}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:210px 210px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:7px}.gallery-grid img:first-child{grid-row:span 2}.contact{background:linear-gradient(110deg,rgba(16,13,10,.95),rgba(16,13,10,.78)),url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1800&q=85') center/cover}.contact-inner{max-width:760px;margin:auto;text-align:center}.contact h2{font:700 clamp(34px,6vw,54px)/1.08 'Playfair Display',serif;margin:14px 0}.contact p{color:#e0d3c4;line-height:1.8;margin-bottom:26px}.contact-note{font-size:13px;color:#c6b9a8;margin-top:18px}.footer{padding:25px 0;color:#a99d90;border-top:1px solid var(--line);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.topbar{padding:16px 0}.navlinks{display:none}.navbtn{padding:10px 13px;font-size:13px}.hero{min-height:640px;background-position:60% center}.hero-content{padding-top:130px}.hero p{font-size:16px}.intro-grid{grid-template-columns:1fr;gap:25px}.intro-photo{height:300px}.intro-copy h2{font-size:35px}.board-grid{grid-template-columns:repeat(2,1fr)}.board{min-height:245px;padding:16px}.board h3{font-size:23px}.price{font-size:19px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 150px}.gallery-grid img:first-child{grid-row:auto;grid-column:span 2}.gallery-grid img{min-height:145px}section{padding:65px 0}}
+    @media(max-width:420px){.wrap{width:min(100% - 28px,1120px)}.brand{font-size:19px}.board-grid{grid-template-columns:1fr 1fr;gap:10px}.board{min-height:220px;padding:12px}.board h3{font-size:20px}.price{font-size:17px}.board small{font-size:11px}.hero h1{font-size:48px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="wrap nav">
+    <a class="brand" href="#accueil">BRAISE <span>AFRIKA</span></a>
+    <nav class="navlinks"><a href="#decouvrir">Découvrir</a><a href="#planches">Nos planches</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a></nav>
+    <a class="navbtn whatsapp-link" href="#contact">Commander</a>
+  </div></header>
+  <main>
+    <section class="hero" id="accueil"><div class="wrap"><div class="hero-content">
+      <div class="eyebrow">Le feu • Le goût • Le partage</div>
+      <h1>Le goût du feu,<br><em>l’âme africaine.</em></h1>
+      <p>Bienvenue chez BRAISE AFRIKA. Découvrez nos grillades généreuses, nos saveurs africaines et nos planches à partager dans une ambiance chaleureuse à Kinshasa.</p>
+      <div class="hero-actions"><a class="btn" href="#planches">Découvrir les planches</a><a class="btn-outline" href="#contact">Nous contacter</a></div>
+    </div></div></section>
+
+    <section id="decouvrir"><div class="wrap intro-grid">
+      <div class="intro-photo"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1100&q=85" alt="Assortiment de grillades au barbecue" loading="lazy"></div>
+      <div class="intro-copy"><div class="eyebrow">Bienvenue chez Braise Afrika</div><h2>Des grillades à partager, des moments à savourer.</h2><p>Retrouvez le plaisir des bonnes choses autour de viandes grillées, de recettes généreuses et d’une cuisine inspirée des goûts africains. Chez nous, chaque planche est une invitation à se retrouver et à partager.</p><p>En famille, entre amis ou entre collègues, choisissez la formule qui vous rassemble.</p><a class="btn" href="#planches">Voir les formules</a></div>
+    </div></section>
+
+    <section class="boards" id="planches"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">À plusieurs, c’est meilleur</div><h2>Nos planches à partager</h2><p>Choisissez la taille de votre planche. Des formules généreuses pour vos tables de 2 à 10 personnes.</p></div>
+      <div class="board-grid">
+        <article class="board" style="--photo:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85')"><div><div class="people">Pour 2 personnes</div><h3>La planche duo</h3><div class="price">66.000 FC</div><small>Un moment à deux</small></div></article>
+        <article class="board popular" style="--photo:url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=85')"><span class="tag">À PARTAGER</span><div><div class="people">Pour 4 personnes</div><h3>La planche famille</h3><div class="price">132.000 FC</div><small>Pour se retrouver</small></div></article>
+        <article class="board" style="--photo:url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=85')"><div><div class="people">Pour 6 personnes</div><h3>La grande planche</h3><div class="price">198.000 FC</div><small>Pour les grandes tablées</small></div></article>
+        <article class="board" style="--photo:url('https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=85')"><div><div class="people">Pour 8 personnes</div><h3>La planche royale</h3><div class="price">264.000 FC</div><small>À partager sans compter</small></div></article>
+        <article class="board" style="--photo:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85')"><div><div class="people">Pour 10 personnes</div><h3>La planche prestige</h3><div class="price">330.000 FC</div><small>Le grand rendez-vous</small></div></article>
+      </div>
+    </div></section>
+
+    <section id="galerie"><div class="wrap"><div class="section-head"><div class="eyebrow">Un aperçu de nos saveurs</div><h2>La passion de la braise</h2><p>Des grillades appétissantes et une ambiance conviviale pour vos meilleurs moments.</p></div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1100&q=85" alt="Grillades au barbecue" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85" alt="Viande grillée" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=85" alt="Barbecue convivial" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=85" alt="Assiette de grillades" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Accompagnement frais" loading="lazy">
+      </div>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="wrap contact-inner"><div class="eyebrow">Une envie de grillades ?</div><h2>Réunissez vos proches autour d’une bonne planche.</h2><p>Pour commander ou obtenir des renseignements, contactez BRAISE AFRIKA sur WhatsApp.</p><a class="btn whatsapp-link" href="#contact">Commander sur WhatsApp</a><div class="contact-note">Kinshasa, République démocratique du Congo</div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> BRAISE AFRIKA. Tous droits réservés.</span><span>Le goût du feu, l’âme africaine.</span></div></footer>
+  <script>
+    // IMPORTANT : remplacez ce texte par le numéro WhatsApp du restaurant,
+    // au format international sans +, espaces ni tirets. Exemple RDC : 243XXXXXXXXX
+    const WHATSAPP_NUMBER = "243XXXXXXXXX";
+    const message = encodeURIComponent("Bonjour BRAISE AFRIKA, je souhaite commander une planche. Pouvez-vous m'aider ?");
+    document.querySelectorAll('.whatsapp-link').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
+          alert("Le site est prêt. Ajoutez d'abord le numéro WhatsApp du restaurant dans le fichier index.html, à la ligne WHATSAPP_NUMBER.");
+          return;
+        }
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank', 'noopener');
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
